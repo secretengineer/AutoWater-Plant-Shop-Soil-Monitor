@@ -19,7 +19,8 @@ class TestDataProcessor(unittest.TestCase):
         self.assertIsNotNone(processed_data, "Processed data should not be None")
         self.assertIsInstance(processed_data, dict, "Processed data should be a dictionary")
         # Add more specific assertions based on the expected structure of processed_data
-        # self.assertIn('expected_key', processed_data)
+        self.assertIn('average_moisture', processed_data, "Processed data should contain 'average_moisture'")
+        self.assertEqual(processed_data['average_moisture'], 30, "Average moisture should be 30")
 
 if __name__ == '__main__':
     unittest.main()

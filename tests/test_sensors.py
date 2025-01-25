@@ -17,7 +17,8 @@ class TestSensorManager(unittest.TestCase):
         self.assertIsNotNone(data, "Data should not be None")
         self.assertIsInstance(data, dict, "Data should be a dictionary")
         # Add more specific assertions based on the expected structure of data
-        # self.assertIn('expected_key', data)
+        # Example: self.assertIn('moisture', data)
+        # Example: self.assertGreaterEqual(data['moisture'], 0)
 
 if __name__ == '__main__':
     unittest.main()
