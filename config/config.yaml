@@ -1,0 +1,9 @@
+# config.yaml
+# Configuration settings for the soil monitoring system
+sensor:
+  type: "Zigbee"
+  update_interval: 60  # in seconds
+
+dashboard:
+  host: "localhost"
+  port: 8080
