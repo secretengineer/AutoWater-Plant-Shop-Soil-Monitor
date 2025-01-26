@@ -4,7 +4,7 @@ from flask import render_template, jsonify, Flask, request
 
 app = Flask(__name__)
 
-# Mock sensor data for demonstration purposes
+# Mock sensor data for demonstration purposespip
 sensor_data = [
     {"id": "sensor1", "moisture": 30},
     {"id": "sensor2", "moisture": 45},
@@ -12,7 +12,7 @@ sensor_data = [
     {"id": "sensor4", "moisture":  5},
     {"id": "sensor5", "moisture": 65},
     {"id": "sensor6", "moisture": 85},
-    {"id": "sensor7", "moisture": 33},
+    {"id": "sensor", "moisture": 33},
     # Add more mock sensors as needed
 ]
 
