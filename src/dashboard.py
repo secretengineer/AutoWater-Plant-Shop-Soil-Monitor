@@ -14,6 +14,7 @@ sensor_data = [
     {"id": "sensor 6", "moisture": 85},
     {"id": "sensor 7", "moisture": 33},
     {"id": "sensor 8", "moisture": 53},
+    {"id": "sensor 9", "moisture": 23},
     # Add more mock sensors as needed
 ]
 
