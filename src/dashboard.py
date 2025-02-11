@@ -6,13 +6,14 @@ app = Flask(__name__)
 
 # Mock sensor data for demonstration purposes
 sensor_data = [
-    {"id": "sensor1", "moisture": 30},
-    {"id": "sensor2", "moisture": 45},
-    {"id": "sensor3", "moisture": 15},
-    {"id": "sensor4", "moisture": 5},
-    {"id": "sensor5", "moisture": 65},
-    {"id": "sensor6", "moisture": 85},
-    {"id": "sensor7", "moisture": 33},
+    {"id": "sensor 1", "moisture": 30},
+    {"id": "sensor 2", "moisture": 45},
+    {"id": "sensor 3", "moisture": 15},
+    {"id": "sensor 4", "moisture": 5},
+    {"id": "sensor 5", "moisture": 65},
+    {"id": "sensor 6", "moisture": 85},
+    {"id": "sensor 7", "moisture": 33},
+    {"id": "sensor 8", "moisture": 53},
     # Add more mock sensors as needed
 ]
 
@@ -28,7 +29,7 @@ def show_dashboard():
     return render_template('dashboard.html')
 
 @app.route('/api/sensors')
-def get_sensors():
+def get_sensors():  
     """
     Fetch and return sensor data as JSON.
 
