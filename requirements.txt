@@ -1,5 +1,28 @@
-# requirements.txt
-Flask==2.2.5
+# Core web framework
+Flask==2.3.3
+Werkzeug==2.3.7
+
+# HTTP client library
 requests==2.32.2
-pyyaml==5.4.1
-unittest2==1.1.0
+
+# Configuration management
+PyYAML==6.0.1
+
+# Development and testing
+pytest==7.4.3
+pytest-cov==4.1.0
+black==23.9.1
+flake8==6.1.0
+
+# Data processing and analysis
+numpy==1.24.4
+pandas==2.0.3
+
+# Zigbee communication (placeholder - replace with actual Zigbee library)
+# pyserial==3.5  # For serial communication with Zigbee modules
+
+# Optional: Database support
+# SQLAlchemy==2.0.23
+
+# Optional: Advanced logging
+# structlog==23.2.0

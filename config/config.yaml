@@ -1,9 +1,51 @@
-# config.yaml
-# Configuration settings for the soil monitoring system
+# Configuration settings for the AutoWater Plant Shop Soil Monitor
+# This file contains non-sensitive configuration settings
+
+# Sensor configuration
 sensor:
   type: "Zigbee"
-  update_interval: 60  # in seconds
+  update_interval: 60  # Data collection interval in seconds
+  
+sensors:
+  ids:
+    - "greenhouse_1_sensor_1"
+    - "greenhouse_1_sensor_2"
+    - "greenhouse_1_sensor_3"
+    - "greenhouse_2_sensor_1"
+    - "greenhouse_2_sensor_2"
+    - "outdoor_sensor_1"
+    - "outdoor_sensor_2"
+    - "nursery_sensor_1"
+    - "nursery_sensor_2"
+    - "nursery_sensor_3"
 
+# Zigbee communication settings
+zigbee:
+  enabled: true
+  port: "COM3"  # Adjust for your system (COM port on Windows, /dev/ttyUSB0 on Linux)
+  baud_rate: 9600
+  timeout: 5
+
+# Web dashboard configuration
 dashboard:
-  host: "localhost"
-  port: 8080
+  host: "127.0.0.1"
+  port: 5000
+  debug: false
+  
+# Data processing thresholds
+processing:
+  alerts:
+    low_moisture: 20.0      # Alert if moisture below 20%
+    high_moisture: 80.0     # Alert if moisture above 80%
+    temperature_min: 5.0    # Alert if temperature below 5°C
+    temperature_max: 40.0   # Alert if temperature above 40°C
+
+# Logging configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file: "logs/autowater.log"
+  
+# System monitoring
+monitoring:
+  health_check_interval: 300  # Health check every 5 minutes
+  data_retention_days: 30     # Keep historical data for 30 days
