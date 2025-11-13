@@ -1,9 +1,6 @@
 # AutoWater Plant Shop Soil Monitor
- An original concept plan and framework for a plant shop soil-monitoring mesh for tracking watering schedules
+ An original concept plan and framework designed by Pat Ryan Things LLCfor a plant shop soil-monitoring mesh for tracking watering schedules based on real-time sensor data.
 
- Initial requirements and research notes:
-
- My original prompt:
  "<div align="center">
 
 # 🌱 AutoWater Plant Shop Soil Monitor
