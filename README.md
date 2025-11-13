@@ -629,8 +629,8 @@ This project is developed and maintained in my spare time. If you find it valuab
 
 **⭐ Star this project if you find it useful! ⭐**
 
-*Made with ❤️ for the plant-loving community*
+*Made for the plant-loving community*
 
-**© 2024-2025 SecretEngineer. Released under the MIT License.**
+**© 2024-2025 Pat Ryan Things LLC. Released under the MIT License.**
 
 </div>
