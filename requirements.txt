@@ -9,7 +9,7 @@ requests==2.32.2
 PyYAML==6.0.1
 
 # Development and testing
-pytest==7.4.3
+pytest==9.0.3
 pytest-cov==4.1.0
 black==24.3.0
 flake8==6.1.0
